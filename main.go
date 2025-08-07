@@ -12,6 +12,7 @@ func main() {
 		return c.String(http.StatusOK, ping())
 	})
 
+	// aliveを追加
 	e.GET("/alive", func(c echo.Context) error {
 		return c.String(http.StatusOK, alive())
 	})
